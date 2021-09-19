@@ -100,4 +100,22 @@ class ListTableViewController: UITableViewController {
 
         return cell
     }
+    
+    
+    // переход по сигваю
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail"  {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let cityweather = citiesArray[indexPath.row]
+            let dstVC = segue.destination as! DetailViewController
+            dstVC.weatherModel = cityweather
+        }
+    }
+    
+    
+    
 }
+
+
+
+

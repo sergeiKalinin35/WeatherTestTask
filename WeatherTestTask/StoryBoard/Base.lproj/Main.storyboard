@@ -75,6 +75,7 @@
                                     <outlet property="conditionCityLabel" destination="f9S-qS-eyc" id="HAK-N4-NQG"/>
                                     <outlet property="nameCityLabel" destination="cJL-n7-x1h" id="vvY-rl-5QE"/>
                                     <outlet property="tempCityLabel" destination="DAU-Rx-jg0" id="80J-qz-pUd"/>
+                                    <segue destination="VAh-N1-ifI" kind="show" identifier="showDetail" id="U8C-WX-sY2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -98,19 +99,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-jg-Ulf">
-                                <rect key="frame" x="141" y="149" width="132" height="36"/>
+                                <rect key="frame" x="141" y="245" width="132" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ясно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-Dg-q0A">
-                                <rect key="frame" x="173" y="398" width="68.5" height="36"/>
+                                <rect key="frame" x="173" y="494" width="68.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ChV-OF-rp3">
-                                <rect key="frame" x="155.5" y="442" width="103.5" height="36"/>
+                                <rect key="frame" x="155.5" y="538" width="103.5" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-hb-kQm">
                                         <rect key="frame" x="0.0" y="0.0" width="37" height="36"/>
@@ -127,7 +128,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-FE-ZjA">
-                                <rect key="frame" x="28.5" y="575" width="357.5" height="146"/>
+                                <rect key="frame" x="28.5" y="671" width="357.5" height="146"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2uw-nq-iZ8">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="146"/>
@@ -190,7 +191,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNm-0O-BR1">
-                                <rect key="frame" x="107" y="193" width="200" height="200"/>
+                                <rect key="frame" x="107" y="289" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Gz2-TR-1ft"/>
                                     <constraint firstAttribute="height" constant="200" id="f01-ul-HQR"/>
@@ -212,6 +213,7 @@
                             <constraint firstItem="ChV-OF-rp3" firstAttribute="centerX" secondItem="mEc-bY-BB1" secondAttribute="centerX" id="s4z-ms-7bV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tHj-bX-4Fm"/>
                     <connections>
                         <outlet property="ImageCity" destination="nNm-0O-BR1" id="9Pt-wQ-nF2"/>
                         <outlet property="conditionLabel" destination="4bX-Dg-q0A" id="egb-76-wFx"/>
