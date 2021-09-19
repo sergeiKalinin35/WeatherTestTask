@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="S23-FJ-id8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="S23-FJ-id8" customClass="ListCell" customModule="WeatherTestTask" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S23-FJ-id8" id="zyX-Zy-91q">
@@ -71,6 +71,11 @@
                                         <constraint firstItem="6cZ-12-A7P" firstAttribute="top" secondItem="zyX-Zy-91q" secondAttribute="topMargin" id="xvv-g8-AGr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="conditionCityLabel" destination="f9S-qS-eyc" id="HAK-N4-NQG"/>
+                                    <outlet property="nameCityLabel" destination="cJL-n7-x1h" id="vvY-rl-5QE"/>
+                                    <outlet property="tempCityLabel" destination="DAU-Rx-jg0" id="80J-qz-pUd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -84,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="740.57971014492762" y="136.60714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="02p-bC-dgD">
             <objects>
-                <viewController id="VAh-N1-ifI" sceneMemberID="viewController">
+                <viewController id="VAh-N1-ifI" customClass="DetailViewController" customModule="WeatherTestTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mEc-bY-BB1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,6 +212,16 @@
                             <constraint firstItem="ChV-OF-rp3" firstAttribute="centerX" secondItem="mEc-bY-BB1" secondAttribute="centerX" id="s4z-ms-7bV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ImageCity" destination="nNm-0O-BR1" id="9Pt-wQ-nF2"/>
+                        <outlet property="conditionLabel" destination="4bX-Dg-q0A" id="egb-76-wFx"/>
+                        <outlet property="maxTempLabel" destination="x2Q-mA-XbM" id="L33-KH-fZc"/>
+                        <outlet property="minTempLabel" destination="cvj-Aw-KvM" id="9WO-tl-XSO"/>
+                        <outlet property="nameCityLabel" destination="wAG-jg-Ulf" id="Z2Z-RQ-fs7"/>
+                        <outlet property="pressureLabel" destination="sYZ-Un-sd5" id="j2V-4g-heo"/>
+                        <outlet property="tempCityLabel" destination="KYH-hb-kQm" id="3b1-MJ-att"/>
+                        <outlet property="windSpeedLabel" destination="cpk-Uq-XU0" id="AeE-Fs-95N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmU-vA-zwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
