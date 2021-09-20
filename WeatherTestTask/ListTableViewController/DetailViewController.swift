@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SwiftSVG
 
 class DetailViewController: UIViewController {
 
     @IBOutlet var nameCityLabel: UILabel!
-    @IBOutlet var ImageCity: UIImageView!
+    @IBOutlet var viewCity: UIView!
     @IBOutlet var conditionLabel: UILabel!
     @IBOutlet var tempCityLabel: UILabel!
     
@@ -32,17 +33,17 @@ class DetailViewController: UIViewController {
         
         nameCityLabel.text = weatherModel?.name
         
-        // https://yastatic.net/weather/i/icons/funky/dark/<значение из поля icon>.svg
-      //  let url = URL(string: "https://yastatic.net/weather/i/icons/blueye/color/svg/\(weatherModel!.conditionCode).svg")
-       //  let weatherImage = UIView(SVGUARL: url!) {(image) in
-     //    image.resizeToFit(self.viewCity.bounds)
-     //    }
-      //   self.viewCity.addSubview(weatherImage)
+       // let url = URL(string: "https://yastatic.net/weather/i/icons/funky/dark/\(weatherModel!.conditionCode).svg")
+        let url = URL(string: "https://yastatic.net/weather/i/icons/blueye/color/svg/\(weatherModel!.conditionCode).svg")
+         let weatherImage = UIView(SVGURL: url!) {(image) in
+         image.resizeToFit(self.viewCity.bounds)
+         }
+         self.viewCity.addSubview(weatherImage)
         
         
         
         conditionLabel.text = weatherModel?.conditionString
-        tempCityLabel.text = "\((weatherModel?.temperature)!)"
+        tempCityLabel.text = weatherModel?.temperatureString
         pressureLabel.text = "\((weatherModel?.presureMm)!)"
         windSpeedLabel.text = "\((weatherModel?.windSpeed)!)"
         minTempLabel.text = "\((weatherModel?.tempMin)!)"

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		F462D13726F73A39003EA20B /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462D13626F73A39003EA20B /* GetCitiesWeather.swift */; };
 		F462D13926F74A9A003EA20B /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462D13826F74A9A003EA20B /* ListCell.swift */; };
 		F46A05F726F7523700BFAEB6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46A05F626F7523700BFAEB6 /* DetailViewController.swift */; };
+		F4FD6F2426F8C85300443657 /* addCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD6F2326F8C85300443657 /* addCity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F462D13626F73A39003EA20B /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
 		F462D13826F74A9A003EA20B /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		F46A05F626F7523700BFAEB6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4FD6F2326F8C85300443657 /* addCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCity.swift; sourceTree = "<group>"; };
 		FD8F31D54892E2E00BF05B9F /* Pods-WeatherTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTestTask.debug.xcconfig"; path = "Target Support Files/Pods-WeatherTestTask/Pods-WeatherTestTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +64,6 @@
 				FD8F31D54892E2E00BF05B9F /* Pods-WeatherTestTask.debug.xcconfig */,
 				C628111A2F78BA2C93112F85 /* Pods-WeatherTestTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,6 +142,7 @@
 				F461488E26F6A1BE00DA6D03 /* Weather.swift */,
 				F462D13626F73A39003EA20B /* GetCitiesWeather.swift */,
 				F462D13826F74A9A003EA20B /* ListCell.swift */,
+				F4FD6F2326F8C85300443657 /* addCity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F461486F26F6525C00DA6D03 /* AppDelegate.swift in Sources */,
+				F4FD6F2426F8C85300443657 /* addCity.swift in Sources */,
 				F461488626F66D0100DA6D03 /* ListTableViewController.swift in Sources */,
 				F462D13726F73A39003EA20B /* GetCitiesWeather.swift in Sources */,
 				F461488B26F68C6200DA6D03 /* NetworkManager.swift in Sources */,
