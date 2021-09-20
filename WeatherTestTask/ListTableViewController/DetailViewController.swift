@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         
         nameCityLabel.text = weatherModel?.name
         
-        
+        // https://yastatic.net/weather/i/icons/funky/dark/<значение из поля icon>.svg
       //  let url = URL(string: "https://yastatic.net/weather/i/icons/blueye/color/svg/\(weatherModel!.conditionCode).svg")
        //  let weatherImage = UIView(SVGUARL: url!) {(image) in
      //    image.resizeToFit(self.viewCity.bounds)
